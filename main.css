@@ -1,53 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+.burger{
+   max-width: 60%;
+   max-height: auto;
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="index.js"></script>
-    <link rel="stylesheet" href="main.css">
-</head>
+}
+.burger:hover{
+    opacity :0.4;
+}
 
+.dropdown {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    
+   
+    
+  }
+  .dropdown-content {
+    
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    visibility: hidden;
+   
+  }
+  
+    
 
+  
+  .dropdown-content li {
+    display: block;
+    color: #080707;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .dropdown-content li:hover {
+   font-size: x-large;
+    
+  }
+  .geel {
+    background-color: yellow; 
+    padding: 2%;
+    margin-right: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    
+ }
+ .wit{
+    background-color:antiquewhite;
+    padding: 1%;
+   margin-right: auto;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
 
-<body>
-    <div class="dropdown">
-
-        <img src="Hamburger_icon.svg" alt="zwartBurger" class="burger" onclick="togglenav()">
-
-        <div class="dropdown-content">
-            <span id="groenig">
-                <ul>
-
-                    <li class="groen"> groen </li>
-                </ul>
-            </span>
-            <span id="blauwig">
-                <ul>
-                    <li a class="blauw">
-                        blauw
-                    </li>
-                </ul>
-            </span>
-            <span id="geelig">
-                <ul>
-                    <li a class="geel">
-                        gele achtergrond
-                    </li>
-                </ul>
-            </span>
-
-            <span id="wittig">
-                <ul>
-                    <li a class="wit">
-                        originele achtergrond
-                    </li>
-                </ul>
-            </span>
-        </div>
-    </div>
-</body>
-
-
-</html>
+.groen{
+    background-color:green;
+    padding: 1%;
+   margin-right: auto;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+.blauw{
+    background-color:blue;
+    padding: 1%;
+   margin-right: auto;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
