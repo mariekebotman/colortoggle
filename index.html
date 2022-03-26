@@ -1,38 +1,28 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      
-        <script defer src="index.js"></script>
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body> 
-        <body id="body" class="grey-background"></body>
-        <input type="checkbox" id="ham-menu">
-        <label for="ham-menu">
-          <div class="hide-des">
-            <span class="menu-line"></span>
-            <span class="menu-line"></span>
-            <span class="menu-line"></span>
-            <span class="menu-line"></span>
-            <span class="menu-line"></span>
-            <span class="menu-line"></span>
-          </div>
-        
-        </label>
-        <div class="full-page-green" onclick="toggleNav()"></div>
-        <div class="ham-menu" >
-          <ul class="centre-text bold-text">
-            <li id="olive" >Home</li>
-            <li id= "red">red</li>
-            <li id= "blue">blue</li>
-            <li id="grey">grey</li>
-            <li id= "purple">purple</li>
-            
-        
-          </ul>
-        </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color toggle</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
+</head>
+<body class="body">
+    <nav>
+        <img class="hamburgermenu" src="hamburger-menu.png" alt="afbeelding van hamburger menu" width="100"/>
+    </nav>
+   
+    <aside class="colormenu">
+        <ul>
+            <li id="btn-grey" class="home">Home</li>
+            <li id="btn-red" class="red">Rood</li>
+            <li id="btn-orange" class="orange">Oranje</li>
+            <li id="btn-purple" class="purple">Paars</li>
+            <li id="btn-green" class="green">Groen</li>
+        </ul>
+    </aside>
 
-        </body>
-
+</body>
 </html>
