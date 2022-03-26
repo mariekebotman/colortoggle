@@ -73,15 +73,6 @@ main {
   cursor: pointer;
 }
 
-.color__form {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  width: 100vw;
-}
-
 .color__menu li,
 .color__menu--hide li {
   margin: 0;
