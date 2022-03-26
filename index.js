@@ -1,53 +1,81 @@
-let getBody = document.querySelector('body');
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".color__menu--hide");
+const colorHome = document.querySelector(".color--home");
+const colorRed = document.querySelector(".color--red");
+const colorOrange = document.querySelector(".color--orange");
+const colorPurple = document.querySelector(".color--purple");
+const colorGreen = document.querySelector(".color--green");
+const text = document.querySelector(".text");
 
-const hamburgermenu = document.querySelector('.hamburgermenu');
-let getColormenu = document.querySelector('.colormenu');
+const showMenu = () => {
+  menu.classList.remove("color__menu--hide");
+  menu.classList.add("color__menu");
+};
+const hideMenu = () => {
+  menu.classList.remove("color__menu");
+  menu.classList.add("color__menu--hide");
+};
+
+const setColor = (color) => {
+  document
+    .querySelector("body")
+    .classList.remove(
+      "color--home",
+      "color--red",
+      "color--orange",
+      "color--purple"
+      "color--green",
+      
+    );
+  document.querySelector("body").classList.add(color);
+};
+
+const setText = (e) => {
+  text.innerHTML = `Background color selected: ${e}`;
+};
+
+hamburger.addEventListener("mouseover", showMenu);
+hamburger.addEventListener("mouseout", hideMenu);
 
 
-hamburgermenu.addEventListener('click', function(){
-    getColormenu.style.visibility = "visible";
+colorHandler();
+
+colorHome.addEventListener("click", function () {
+  colorHandler("gray");
+});
+colorRed.addEventListener("click", function () {
+  colorHandler("red");
+});
+colorOrange.addEventListener("click", function () {
+  colorHandler("orange");
+});
+colorPurple.addEventListener("click", function () {
+  colorHandler("purple");
+});
+colorGreen.addEventListener("click", function () {
+  colorHandler("green");
 });
 
 
-const btnGrey = document.querySelector('#btn-grey');
-const btnRed = document.querySelector('#btn-red');
-const btnOrange = document.querySelector('#btn-orange');
-const btnPurple = document.querySelector('#btn-purple');
-const btnGreen = document.querySelector('#btn-green');
-
-
-btnGrey.addEventListener('click', function(){
-    getBody.style.backgroundColor = "rgb(173, 173, 173)";
-    getColormenu.style.visibility = "hidden";
+document.addEventListener("keydown", (event) => {
+  keyHandler(event.key);
 });
 
-btnRed.addEventListener('click', function(){
-    getBody.style.backgroundColor = "rgba(212, 0, 0, 0.993)";
-    getColormenu.style.visibility = "hidden";
+checkHome.addEventListener("click", function () {
+  colorHandler("gray");
 });
-
-btnOrange.addEventListener('click', function(toggleColor){
-    getBody.style.backgroundColor = "rgb(255, 123, 0)";
-    getColormenu.style.visibility = "hidden";
+checkRed.addEventListener("click", function () {
+  colorHandler("red");
 });
-
-btnPurple.addEventListener('click', function(toggleColor){
-    getBody.style.backgroundColor = "rgb(158, 0, 111)";
-    getColormenu.style.visibility = "hidden";
+checkOrange.addEventListener("click", function () {
+  colorHandler("orange");
 });
-
-btnGreen.addEventListener('click', function(toggleColor){
-    getBody.style.backgroundColor = "rgb(0, 160, 0)";
-    getColormenu.style.visibility = "hidden";
+checkPurple.addEventListener("click", function () {
+  colorHandler("purple");
 });
-
-
-
-
-
-
-
-
+checkGreen.addEventListener("click", function () {
+  colorHandler("green");
+});
 
 
 
