@@ -1,65 +1,43 @@
-.burger{
-   max-width: 60%;
-   max-height: auto;
-
-}
-.burger:hover{
-    opacity :0.4;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.dropdown {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    
-   
-    
-  }
-  .dropdown-content {
-    
-    position: absolute;
-    width: 100%;
-    overflow: auto;
+body {
+    background-color: rgb(173, 173, 173);
+}
+
+nav {
+    padding: 50px;
+}
+
+.colormenu {
     visibility: hidden;
-   
-  }
-  
-    
-
-  
-  .dropdown-content li {
-    display: block;
-    color: #080707;
-    padding: 5px;
-    text-decoration: none;
-  }
-  .dropdown-content li:hover {
-   font-size: x-large;
-    
-  }
-  .geel {
-    background-color: yellow; 
-    padding: 2%;
-    margin-right: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
-    
- }
- .wit{
-    background-color:antiquewhite;
-    padding: 1%;
-   margin-right: auto;
-   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 }
 
-.groen{
-    background-color:green;
-    padding: 1%;
-   margin-right: auto;
-   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+li {
+    padding: 20px 60px;
+    margin-bottom: 3px;
+    width: 200px;
+    font-family: arial;
 }
-.blauw{
-    background-color:blue;
-    padding: 1%;
-   margin-right: auto;
-   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+
+.home {
+    background-color: rgb(133, 133, 133);
+}
+
+.red {
+    background-color: rgba(212, 0, 0, 0.993);
+}
+
+.orange {
+    background-color: rgb(255, 123, 0);
+}
+
+.purple {
+    background-color: rgb(158, 0, 111);
+}
+
+.green {
+    background-color: rgb(0, 160, 0);
 }
