@@ -23,7 +23,7 @@ const setColor = (color) => {
       "color--home",
       "color--red",
       "color--orange",
-      "color--purple"
+      "color--purple",
       "color--green",
       
     );
