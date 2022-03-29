@@ -57,31 +57,3 @@ colorGreen.addEventListener("click", function () {
 });
 
 
-document.addEventListener("keydown", (event) => {
-  keyHandler(event.key);
-});
-
-checkHome.addEventListener("click", function () {
-  colorHandler("gray");
-});
-checkRed.addEventListener("click", function () {
-  colorHandler("red");
-});
-checkOrange.addEventListener("click", function () {
-  colorHandler("orange");
-});
-checkPurple.addEventListener("click", function () {
-  colorHandler("purple");
-});
-checkGreen.addEventListener("click", function () {
-  colorHandler("green");
-});
-
-
-
-
-
-
-
-
-
