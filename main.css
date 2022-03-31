@@ -17,19 +17,11 @@ h1 {
   width: 100vw;
 }
 
-h2 {
-  position: absolute;
-  display: flex;
-  top: 10rem;
-  margin: auto;
-  justify-content: center;
-  width: 100vw;
-}
-
 main {
   position: relative;
   top: 50vh;
   width: 100%;
+    font-size: 0px;
 }
 
 .color--home {
@@ -47,13 +39,13 @@ main {
   color: black;
 }
 
-.color--purple {
-  background-color: purple;
+.color--green {
+  background-color: green;
   color: lightgray;
 }
 
-.color--green {
-  background-color: green;
+.color--purple {
+  background-color: purple;
   color: lightgray;
 }
 
@@ -71,6 +63,15 @@ main {
 
 .color__menu:hover {
   cursor: pointer;
+}
+
+.color__form {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 10000vw;
 }
 
 .color__menu li,
